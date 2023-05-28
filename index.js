@@ -9,7 +9,7 @@ for(var i = 0; i < premios.length; i++)
 let num;
 
 let running=true;
-ruleta=setInterval(girar,400);
+ruleta=setInterval(girar,600);
 
 function girar() 
 {
@@ -27,12 +27,12 @@ function boton()
         running=false;
         clearInterval(ruleta);
         ruleta=setInterval(girar,1200);
-        setTimeout(function () {clearInterval(ruleta);window.document.getElementById("boton").value="GIRAR RULETA";window.document.getElementById("boton").disabled=false;},5000);
+        setTimeout(function () {clearInterval(ruleta);window.document.getElementById("boton").value="GIRAR RULETA";window.document.getElementById("boton").disabled=false;},6000);
     }
     else
     {
         running=true;
-        ruleta=setInterval(girar,400);
+        ruleta=setInterval(girar,600);
         setTimeout(function () {window.document.getElementById("boton").value="PARAR RULETA";window.document.getElementById("boton").disabled=false;},1500);
     }    
 }
