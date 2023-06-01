@@ -1,26 +1,36 @@
+:root {
+--primary: #00A708;
+--primaryshadow: #007535;
+--secondary: #008d47;
+--secondaryshadow: #085224;
+--light: #F3C178;
+--dark: #440046;
+--contrast: #4e157c;
+}
 * {
   font-family: "Pokemon Solid", sans-serif;
 }
 body {
-  background-color: lemonchiffon;
+  background-color: var(--dark);
   padding: 10px;
 }
 #conjunto {
-  color: blueviolet;
-  border: 2px solid blueviolet;
+  color: var(--contrast);
+  border: 2px solid var(--primaryshadow);
   border-radius: 20px;
   /*width: fit-content;
     height: fit-content;*/
-  width: 40%;
-  height: 750px;
-  background-color: aqua;
+  width: 80%;
+  height: fit-content;
+  background-color: var(--primary);
   padding: 30px;
-  box-shadow: 5px 5px rgba(137, 43, 226, 0.9);
+  box-shadow: 5px 5px var(--primaryshadow);
   margin: 20px auto;
-  text-shadow: 2px 0 rgb(255, 239, 98), -2px 0 rgb(255, 239, 98),
-    0 2px rgb(255, 239, 98), 0 -2px rgb(255, 239, 98), 1px 1px rgb(255, 239, 98),
-    -1px -1px rgb(255, 239, 98), 1px -1px rgb(255, 239, 98),
-    -1px 1px rgb(255, 239, 98);
+  text-shadow: 2px 0 var(--light), -2px 0 var(--light),
+    0 2px var(--light), 0 -2px var(--light), 1px 1px var(--light),
+    -1px -1px var(--light), 1px -1px var(--light),
+    -1px 1px var(--light);
+    font-size: 24px;
 }
 input,
 label,
@@ -29,38 +39,38 @@ p {
 }
 .boton {
   border-radius: 20px;
-  background-color: #ff80c0;
-  border: 1px solid #eb4698;
-  color: white;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondaryshadow);
+  color: var(--light);
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 10px 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
-  box-shadow: 3px 3px #eb4699e5;
-  text-shadow: 2px 0 rebeccapurple, -2px 0 rebeccapurple, 0 2px rebeccapurple,
-    0 -2px rebeccapurple, 1px 1px rebeccapurple, -1px -1px rebeccapurple,
-    1px -1px rebeccapurple, -1px 1px rebeccapurple;
+  font-size: 28px;
+  box-shadow: 3px 3px var(--secondaryshadow);
+  text-shadow: 2px 0 var(--contrast), -2px 0 var(--contrast), 0 2px var(--contrast),
+    0 -2px var(--contrast), 1px 1px var(--contrast), -1px -1px var(--contrast),
+    1px -1px var(--contrast), -1px 1px var(--contrast);
 }
 .boton:disabled {
-  background-color: #9e4e76;
-  color: lightgrey;
-  border: 1px solid #551937;
-  box-shadow: 3px 3px #551937e5;
-  text-shadow: 2px 0 rgb(45, 22, 68), -2px 0 rgb(45, 22, 68),
-    0 2px rgb(45, 22, 68), 0 -2px rgb(45, 22, 68), 1px 1px rgb(45, 22, 68),
-    -1px -1px rgb(45, 22, 68), 1px -1px rgb(45, 22, 68),
-    -1px 1px rgb(45, 22, 68);
+  background-color: var(--secondaryshadow);
+  color: var(--contrast);
+  border: 1px solid var(--secondary);
+  box-shadow: 3px 3px var(--secondary);
+  text-shadow: 2px 0 var(--light), -2px 0 var(--light),
+    0 2px var(--light), 0 -2px var(--light), 1px 1px var(--light),
+    -1px -1px var(--light), 1px -1px var(--light),
+    -1px 1px var(--light);
 }
 strong {
-  color: #eb4698;
+  color: var(--secondary);
 }
 table {
   text-align: center;
   margin: 15px auto;
   padding: 5px;
-  border: 2px solid blueviolet;
+  border: 2px solid var(--primaryshadow);
   border-radius: 20px;
 }
 #formulario,
@@ -71,6 +81,7 @@ table {
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .animated {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onclick="boton();" onkeydown="tecla(event);">
     <head>
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
         <title>Ruleta XDESEROS CUP 6</title>
@@ -26,15 +26,15 @@
     </head>
     <body>
         <div id="conjunto">
-            <div id="formulario">
-                <input type="button" value="PARAR RULETA" id="boton" class="boton" onclick="boton();">
-            </div>
             <div id="resultado">
                 <h1 id="texto-premio"></h1>
-                <img id="imagen-premio" width=200px src="" alt="img-premio"/>
+                <img id="imagen-premio" height=300px src="" alt="img-premio"/>
                 <script>
                     girar();
                 </script>
+            </div>
+            <div id="formulario" style="padding-top: 50px;">
+                <input type="button" value="PARAR RULETA" id="boton" class="boton" onclick="boton();">
             </div>
         </div>
     </body>

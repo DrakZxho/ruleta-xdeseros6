@@ -157,20 +157,22 @@ function girar() {
 }
 
 function boton() {
-  window.document.getElementById("boton").disabled = true;
+  if (!window.document.getElementById("boton").disabled) {
+    window.document.getElementById("boton").disabled = true;
 
-  if (running) {
-    running = false;
-    clearInterval(ruleta);
-    ruleta = setInterval(girar, 1200);
-    setTimeout(pararRuleta, 6000);
-  } else {
-    window.document
-      .getElementById("imagen-premio")
-      .classList.remove("animated");
-    running = true;
-    ruleta = setInterval(girar, 600);
-    setTimeout(girarRuleta, 1500);
+    if (running) {
+      running = false;
+      clearInterval(ruleta);
+      ruleta = setInterval(girar, 1200);
+      setTimeout(pararRuleta, 6000);
+    } else {
+      window.document
+        .getElementById("imagen-premio")
+        .classList.remove("animated");
+      running = true;
+      ruleta = setInterval(girar, 600);
+      setTimeout(girarRuleta, 1500);
+    }
   }
 }
 
@@ -184,4 +186,10 @@ function pararRuleta() {
 function girarRuleta() {
   window.document.getElementById("boton").value = "PARAR RULETA";
   window.document.getElementById("boton").disabled = false;
+}
+
+function tecla(e) {
+	if (e.keyCode == 13 || e.keyCode == 32) {
+		boton();
+	}
 }
