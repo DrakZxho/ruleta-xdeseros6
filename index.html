@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html onclick="boton();" onkeydown="tecla(event);">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-        <title>Ruleta XDESEROS CUP 6</title>
-        <link rel="icon" href="img/bulbasaur-trans.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-        <style>
-            /* Chrome, Safari, Edge, Opera */
-            input::-webkit-outer-spin-button,
-            input::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
-            
-            /* Firefox *//*
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <title>Ruleta XDESEROS CUP 6</title>
+    <link rel="icon" href="img/bulbasaur-trans.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/pokemon-solid"
+      rel="stylesheet"
+    />
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */ /*
             input[type=number] {
                 -moz-appearance: textfield;
             }*/
-        </style>
-        <link rel="stylesheet" href="index.css"/>
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <div id="conjunto">
-            <div id="resultado">
-                <h1 id="texto-premio"></h1>
-                <img id="imagen-premio" height=300px src="" alt="img-premio"/>
-                <script>
-                    girar();
-                </script>
-            </div>
-            <div id="formulario" style="padding-top: 50px;">
-                <input type="button" value="PARAR RULETA" id="boton" class="boton" onclick="boton();">
-            </div>
-        </div>
-    </body>
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="conjunto">
+      <!--
+      <div class="resultado">
+        <h1 id="texto-premio"></h1>
+        <img id="imagen-premio" height="300px" src="" alt="img-premio" />
+      </div>
+      -->
+      <div id="formulario" style="padding-top: 50px">
+        <input
+          type="button"
+          value="PARAR RULETA"
+          id="boton"
+          class="boton"
+          onclick="boton();"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script>
+    girar();
+  </script>
 </html>
