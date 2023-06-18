@@ -27,7 +27,7 @@ const premios = [
   { id: 21, nombre: "NUMEL", imagen: "NUMEL.svg" },
   { id: 22, nombre: "PIEDRA SOLAR", imagen: "PIEDRASOLAR.svg" },
   { id: 23, nombre: "PAÑUELO SEDA", imagen: "PANUELOSEDA.svg" },
-  { id: 24, nombre: "1 VIDA", imagen: "VIDAEXTRA.svg" },
+  { id: 24, nombre: "1 VIDA", imagen: "VIDAEXTRA.png" },
   { id: 25, nombre: "RESURRECCIÓN", imagen: "REVIVIR.svg" },
   { id: 26, nombre: "FICHAS DEL CASINO", imagen: "MONEDERO.svg" },
   { id: 27, nombre: "NADA", imagen: "SUSTITUTO.svg" },
