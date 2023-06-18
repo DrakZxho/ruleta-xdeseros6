@@ -1,11 +1,11 @@
 :root {
-  --primary: #00a708;
-  --primaryshadow: #007535;
-  --secondary: #008d47;
-  --secondaryshadow: #085224;
-  --light: #f3c178;
-  --dark: #440046;
-  --contrast: #4e157c;
+--primary: #00A708;
+--primaryshadow: #007535;
+--secondary: #008d47;
+--secondaryshadow: #085224;
+--light: #F3C178;
+--dark: #440046;
+--contrast: #4e157c;
 }
 * {
   font-family: "Pokemon Solid", sans-serif;
@@ -26,10 +26,11 @@ body {
   padding: 30px;
   box-shadow: 5px 5px var(--primaryshadow);
   margin: 20px auto;
-  text-shadow: 2px 0 var(--light), -2px 0 var(--light), 0 2px var(--light),
-    0 -2px var(--light), 1px 1px var(--light), -1px -1px var(--light),
-    1px -1px var(--light), -1px 1px var(--light);
-  font-size: 24px;
+  text-shadow: 2px 0 var(--light), -2px 0 var(--light),
+    0 2px var(--light), 0 -2px var(--light), 1px 1px var(--light),
+    -1px -1px var(--light), 1px -1px var(--light),
+    -1px 1px var(--light);
+    font-size: 24px;
 }
 input,
 label,
@@ -48,19 +49,19 @@ p {
   display: inline-block;
   font-size: 28px;
   box-shadow: 3px 3px var(--secondaryshadow);
-  text-shadow: 2px 0 var(--contrast), -2px 0 var(--contrast),
-    0 2px var(--contrast), 0 -2px var(--contrast), 1px 1px var(--contrast),
-    -1px -1px var(--contrast), 1px -1px var(--contrast),
-    -1px 1px var(--contrast);
+  text-shadow: 2px 0 var(--contrast), -2px 0 var(--contrast), 0 2px var(--contrast),
+    0 -2px var(--contrast), 1px 1px var(--contrast), -1px -1px var(--contrast),
+    1px -1px var(--contrast), -1px 1px var(--contrast);
 }
 .boton:disabled {
   background-color: var(--secondaryshadow);
   color: var(--contrast);
   border: 1px solid var(--secondary);
   box-shadow: 3px 3px var(--secondary);
-  text-shadow: 2px 0 var(--light), -2px 0 var(--light), 0 2px var(--light),
-    0 -2px var(--light), 1px 1px var(--light), -1px -1px var(--light),
-    1px -1px var(--light), -1px 1px var(--light);
+  text-shadow: 2px 0 var(--light), -2px 0 var(--light),
+    0 2px var(--light), 0 -2px var(--light), 1px 1px var(--light),
+    -1px -1px var(--light), 1px -1px var(--light),
+    -1px 1px var(--light);
 }
 strong {
   color: var(--secondary);
@@ -72,18 +73,9 @@ table {
   border: 2px solid var(--primaryshadow);
   border-radius: 20px;
 }
-#formulario {
+#formulario,
+#resultado {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding-bottom: 40px;
-}
-
-.resultado {
-  display: none;
   flex-direction: column;
   align-content: center;
   justify-content: center;
