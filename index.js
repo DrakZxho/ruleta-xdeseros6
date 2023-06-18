@@ -21,13 +21,13 @@ const premios = [
   { id: 15, nombre: "MAGIKARP", imagen: "MAGIKARP.svg" },
   { id: 16, nombre: "BANDA FOCUS", imagen: "BANDAFOCUS.svg" },
   { id: 17, nombre: "CINTA FOCUS", imagen: "CINTAFOCUS.svg" },
-  { id: 18, nombre: "ALEATORIO DE LA POKÉDEX", imagen: "POKEDEX.png" },
+  { id: 18, nombre: "ALEATORIO DE LA POKÉDEX", imagen: "POKEDEX1.png" },
   { id: 19, nombre: "NATU", imagen: "NATU.svg" },
   { id: 20, nombre: "ALTARIA", imagen: "ALTARIA.svg" },
   { id: 21, nombre: "NUMEL", imagen: "NUMEL.svg" },
   { id: 22, nombre: "PIEDRA SOLAR", imagen: "PIEDRASOLAR.svg" },
   { id: 23, nombre: "PAÑUELO SEDA", imagen: "PANUELOSEDA.svg" },
-  { id: 24, nombre: "1 VIDA", imagen: "VIDAEXTRA.png" },
+  { id: 24, nombre: "1 VIDA", imagen: "VIDAEXTRA1.png" },
   { id: 25, nombre: "RESURRECCIÓN", imagen: "REVIVIR.svg" },
   { id: 26, nombre: "FICHAS DEL CASINO", imagen: "MONEDERO.svg" },
   { id: 27, nombre: "NADA", imagen: "SUSTITUTO.svg" },
@@ -152,22 +152,3 @@ function tecla(e) {
     boton();
   }
 }
-
-/*
-let prlog =
-  "RESTAU.TODO,X2 MAX POCIÓN,EEVEE,PERISCOPIO,PIEDRA TRUENO,PIEDRA AGUA,PIEDRA NOCHE,PIEDRA HOJA,PIEDRA FUEGO,ZUMO DE BAYA,X100 ULTRABALL,X10 ESC.CORAZÓN,TAILLOW,ATRAPAR DOS POKEMON DE RUTA,ESC.CORAZÓN,Magikarp,Banda Focus,Cinta Focus,Aleatorio de la Pokédex,NATU,ALTARIA,NUMEL,piedra solar,pañuelo seda,1 VIDA,RESURRECCIÓN,fichas del casino,Nada,masterball,rocío bondad,flecha venenosa,Campana Alivio,-1 vida. (Si no tienes no te haría efecto),cinturón negro,campana concha,revestimiento metálico,hierba blanca,pico afilado,cinta elegida,fósil de cradily,reSURRECCIÓN +1 vida,griezmann,inicial primera gen,rhyhorn,elekid,X5 ESC.CORAZÓN,cuchara torcida,magby,legendario prohibido,metagross,hueso grueso,inicial segunda gen,hariyama,imán,agua mística,ARENA FINA,SEMILLA MILAGRO,colmillo dragon,HECHIZO,claydol,flygon,inicial gen 3,kingdra,X5 MAX POCIÓN,FOSIL De armaldo,X3 RESTAURAR TODO,restos";
-let prlogarr = prlog.split(",");
-prlog = "";
-for (var i = 0; i < prlogarr.length; i++) {
-  if (i > 0) prlog += ",";
-  prlog +=
-    "{id: " +
-    i +
-    ', nombre: "' +
-    prlogarr[i].toUpperCase() +
-    '", imagen: "' +
-    prlogarr[i].toUpperCase().replace(/ /g, "-").replace(".", "") +
-    '.svg"}';
-}
-console.log(prlog);
-*/
